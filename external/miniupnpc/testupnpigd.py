@@ -68,7 +68,7 @@ try:
 		try:
 			httpd.handle_request()
 			httpd.server_close()
-		except KeyboardInterrupt, details:
+		except KeyboardInterrupt as details:
 			print "CTRL-C exception!", details
 		b = u.deleteportmapping(eport, 'TCP')
 		if b:
@@ -80,5 +80,5 @@ try:
 
 	httpd.server_close()
 
-except Exception, e:
+except Exception as e:
 	print 'Exception :', e

@@ -23,7 +23,7 @@ print u.discover(), 'device(s) detected'
 # select an igd
 try:
   u.selectigd()
-except Exception, e:
+except Exception as e:
   print 'Exception :', e
   sys.exit(1)
 # display information about the IGD and the internet connection
